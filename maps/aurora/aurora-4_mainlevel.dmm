@@ -5813,8 +5813,6 @@
 	req_access = list(24)
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -6237,27 +6235,21 @@
 /turf/simulated/floor/plating,
 /area/maintenance/atmos_control)
 "amM" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 1
-	},
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8";
 	pixel_x = 0
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/atmos_control)
 "amN" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
@@ -6272,12 +6264,6 @@
 	req_access = null;
 	req_one_access = list(11,24)
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable{
 	d1 = 4;
@@ -6288,12 +6274,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/atmos_control)
 "amP" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 8;
@@ -6302,12 +6282,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/atmos_control)
 "amQ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /obj/structure/cable/green{
 	d2 = 4;
 	icon_state = "0-4"
@@ -6332,14 +6306,6 @@
 /obj/structure/cable/green{
 	d2 = 8;
 	icon_state = "0-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	icon_state = "intact-scrubbers";
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	icon_state = "intact-supply";
-	dir = 9
 	},
 /obj/structure/cable/green,
 /turf/simulated/floor/plating,
@@ -15159,7 +15125,6 @@
 	name = "Engineering Hallway";
 	req_one_access = list(10)
 	},
-/obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -20881,6 +20846,9 @@
 /area/crew_quarters/captain)
 "aKQ" = (
 /obj/structure/bed/chair/comfy/brown,
+/obj/structure/sign/nosmoking_2{
+	pixel_y = 32
+	},
 /turf/simulated/floor/carpet,
 /area/crew_quarters/captain)
 "aKR" = (
@@ -20897,14 +20865,14 @@
 /turf/simulated/floor/wood,
 /area/crew_quarters/captain)
 "aKS" = (
-/obj/structure/sign/nosmoking_2{
-	pixel_y = 32
-	},
 /obj/structure/table/woodentable,
 /obj/machinery/camera/network/command{
 	c_tag = "Bridge - Captain's Office West"
 	},
 /obj/item/weapon/storage/secure/briefcase,
+/obj/machinery/alarm{
+	pixel_y = 23
+	},
 /turf/simulated/floor/wood,
 /area/crew_quarters/captain)
 "aKT" = (
@@ -25212,10 +25180,6 @@
 	},
 /obj/structure/window/reinforced{
 	dir = 4
-	},
-/obj/structure/cable/green{
-	d2 = 8;
-	icon_state = "0-8"
 	},
 /turf/simulated/floor/plating,
 /area/ai_monitored/storage/eva)
@@ -32859,7 +32823,7 @@
 	name = "Office Door Control";
 	pixel_x = -14;
 	pixel_y = 36;
-	req_access = list(40)
+	req_access = list(5)
 	},
 /turf/simulated/floor/carpet/blue,
 /area/medical/exam_room)
@@ -38436,6 +38400,7 @@
 	dir = 1
 	},
 /obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/cmo)
 "bon" = (
@@ -39458,7 +39423,7 @@
 	name = "MedBay Lockdown Shutters";
 	opacity = 0
 	},
-/obj/structure/sign/redcross,
+/obj/structure/sign/greencross,
 /turf/simulated/floor/plating,
 /area/medical/reception)
 "bpY" = (
@@ -41069,9 +41034,6 @@
 /area/rnd/research)
 "bsB" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
 /obj/effect/floor_decal/corner/mauve{
 	icon_state = "corner_white";
 	dir = 6
@@ -41107,9 +41069,6 @@
 /area/rnd/research)
 "bsD" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
 /obj/machinery/door/airlock/research{
 	id_tag = "researchdoor";
 	name = "Research Division Access";
@@ -44600,7 +44559,7 @@
 	name = "MedBay Lockdown Shutters";
 	opacity = 0
 	},
-/obj/structure/sign/redcross,
+/obj/structure/sign/greencross,
 /turf/simulated/floor/plating,
 /area/medical/reception)
 "byj" = (
@@ -47779,7 +47738,6 @@
 	name = "Library Maintenance";
 	req_access = list(12)
 	},
-/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/library)
 "bDE" = (
@@ -49743,17 +49701,6 @@
 	name = "Dorm"
 	},
 /obj/machinery/door/firedoor,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -56896,9 +56843,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/substation/civilian_west)
 "bVh" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
-	},
 /obj/machinery/power/breakerbox/activated{
 	RCon_tag = "\[F.3] Civilian Substation Bypass"
 	},
@@ -65042,12 +64986,6 @@
 	req_access = list(6)
 	},
 /obj/structure/plasticflaps/airtight,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /turf/simulated/floor/tiled/white,
 /area/medical/temp_morgue)
 "cjE" = (
@@ -65280,6 +65218,20 @@
 	},
 /turf/simulated/floor/plating,
 /area/medical/gen_treatment)
+"cke" = (
+/obj/structure/sign/greencross,
+/turf/simulated/wall/r_wall,
+/area/medical/reception)
+"ckf" = (
+/obj/structure/sign/greencross{
+	pixel_y = 16
+	},
+/turf/simulated/wall,
+/area/medical/reception)
+"ckg" = (
+/obj/structure/sign/greencross,
+/turf/simulated/wall,
+/area/medical/reception)
 
 (1,1,1) = {"
 aaa
@@ -76681,7 +76633,7 @@ aab
 aab
 aab
 aab
-aaR
+aaa
 aaa
 aaa
 aaa
@@ -82625,7 +82577,7 @@ aEJ
 aXg
 aYn
 aQs
-aaR
+baB
 bbQ
 bdj
 bel
@@ -84938,7 +84890,7 @@ aEJ
 aXn
 aYr
 aQs
-aaR
+aQs
 bbY
 aLi
 bdq
@@ -85195,7 +85147,7 @@ aEJ
 aXm
 aDa
 aZF
-aaR
+aQs
 bbY
 aLi
 bep
@@ -85452,7 +85404,7 @@ aEJ
 aXm
 aDa
 aZG
-aaR
+aQs
 aLi
 aLi
 beq
@@ -85709,7 +85661,7 @@ aEJ
 aXm
 aDa
 aZG
-aaR
+aQs
 aLi
 aLi
 bep
@@ -85966,7 +85918,7 @@ aEJ
 aXm
 aDa
 aZG
-aaR
+aQs
 aLi
 aMP
 bep
@@ -86223,7 +86175,7 @@ aJD
 aXo
 aDa
 aZH
-aaR
+aQs
 aLi
 aLi
 bep
@@ -86480,13 +86432,13 @@ aQw
 aXp
 aYs
 aZI
-aaR
+aQs
 aLi
 bdq
 ber
 aLf
-bhb
-bhb
+aab
+aab
 aZK
 bkv
 blX
@@ -86737,7 +86689,7 @@ aVP
 aXq
 aYt
 aQs
-aaR
+aQs
 baD
 bdr
 aVF
@@ -93157,7 +93109,7 @@ aPf
 aJR
 aJR
 aTA
-aVd
+aVf
 aWj
 aXD
 aYC
@@ -93935,13 +93887,13 @@ ceu
 aZN
 baS
 bck
-bdC
+baS
 baS
 baS
 aZN
 bix
 bix
-bkM
+bix
 bmn
 bix
 aZN
@@ -95485,18 +95437,18 @@ bdF
 bfW
 bhr
 bdF
-bnA
+cke
 boM
-bpX
+buK
 brq
 bsK
-boM
-buK
+btQ
+ckf
 brq
 bxh
-byi
+boM
 buK
-btQ
+ckg
 aWc
 aXA
 bCE
@@ -107029,7 +106981,7 @@ aab
 aab
 aHl
 aKz
-aMm
+aqd
 aOe
 aPK
 aRo
